@@ -2,6 +2,10 @@
 
 This is the documentation for the Ocean Biodiversity Information System (OBIS) Open Data available on AWS.
 
+- [Data license](#data-license)
+- [Data organization](#data-organization)
+- [Data access](#data-access)
+
 ## Data license
 
 The OBIS dataset is built from source datasets that are licensed with CC0, CC-BY, or CC-BY-NC licenses. License and citation information for every dataset is available at `s3://obis-open-data/licenses.tsv`.
