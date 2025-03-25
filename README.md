@@ -8,7 +8,11 @@ This is the documentation for the Ocean Biodiversity Information System (OBIS) O
 
 ## Data license
 
-The OBIS dataset is built from source datasets that are licensed with CC0, CC-BY, or CC-BY-NC licenses. License and citation information for every dataset is available at `s3://obis-open-data/licenses.tsv`.
+The OBIS dataset is built from source datasets that are licensed with CC0, CC BY, or CC BY-NC licenses. License and citation information for every source dataset is available at `s3://obis-open-data/licenses.tsv`. The full OBIS dataset is licensed under CC BY-NC and can be cited as follows:
+
+```
+Ocean Biodiversity Information System (OBIS) (25 March 2025) OBIS Occurrence Data https://doi.org/10.25607/obis.occurrence.b89117cd.
+```
 
 ## Data organization
 
@@ -109,7 +113,7 @@ The `interpreted` field contains the Darwin Core terms as submitted by the data 
 ## Data access
 ### Downloading the dataset
 
-Use the AWS CLI to download the dataset locally. The size of the dataset is around 50 GB.
+Use the [AWS CLI](https://aws.amazon.com/cli/) to download the dataset locally. The size of the dataset is around 50 GB.
 
 ```
 aws s3 sync s3://obis-open-data/occurrence/ ./occurrence/
