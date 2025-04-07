@@ -116,7 +116,7 @@ The `interpreted` field contains the Darwin Core terms as submitted by the data 
 Use the [AWS CLI](https://aws.amazon.com/cli/) to download the dataset locally. The size of the dataset is around 50 GB.
 
 ```
-aws s3 sync s3://obis-open-data/occurrence/ ./occurrence/
+aws s3 sync --no-sign-request s3://obis-open-data/occurrence/ ./occurrence/
 ```
 
 ### Querying the dataset locally using Python
