@@ -144,7 +144,7 @@ df = duckdb.query(query).to_df()
 
 ### Example: Querying the dataset locally using R
 
-This is an example of a taxonomic query:
+This is an example [DuckDB](https://duckdb.org/) query for a single genus against a local copy of the dataset.
 
 ```r
 library(DBI)
@@ -159,7 +159,7 @@ df <- dbGetQuery(con, "
 ")
 ```
 
-Spatial queries are supported as well:
+Spatial queries are supported as well. Use [https://wktmap.com](https://wktmap.com) to create a WKT string for the polygon of interest.
 
 ```r
 library(DBI)
