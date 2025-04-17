@@ -25,7 +25,7 @@ obis-open-data/
 │  ├─ 00017595-e015-4ec6-bf8a-b013e0dca521.parquet
 │  +─ ...
 +─ dwca/
-   ├─ 00017595-e015-4ec6-bf8a-b013e0dca521.parquet
+   ├─ 00017595-e015-4ec6-bf8a-b013e0dca521.zip
    +─ ...
 ```
 
