@@ -2,11 +2,11 @@
 
 This is the documentation for the Ocean Biodiversity Information System (OBIS) Open Data available on AWS.
 
-- [Data license](#data-license)
+- [Data license and citation](#data-license)
 - [Data organization](#data-organization)
 - [Data access](#data-access)
 
-## Data license
+## Data license and citation
 
 The OBIS dataset is built from source datasets that are licensed with CC0, CC BY, or CC BY-NC licenses. License and citation information for every source dataset is available at `s3://obis-open-data/licenses.tsv`. The full OBIS dataset is licensed under CC BY-NC and can be cited as follows:
 
@@ -16,7 +16,7 @@ Ocean Biodiversity Information System (OBIS) (25 March 2025) OBIS Occurrence Dat
 
 ## Data organization
 
-The OBIS dataset is available as GeoParquet from AWS S3 at `s3://obis-open-data/occurrence` with one file per source dataset. Browse the files [here](https://obis-open-data.s3.amazonaws.com/index.html). The source dataset Darwin Core Archives are available from `s3://obis-open-data/dwca`.
+The OBIS dataset is available as [GeoParquet](https://geoparquet.org/) from AWS S3 at `s3://obis-open-data/occurrence` with one file per source dataset. Browse the files [here](https://obis-open-data.s3.amazonaws.com/index.html). The source dataset Darwin Core Archives are available from `s3://obis-open-data/dwca`. The Darwin Core Archive format is documented [here](https://ipt.gbif.org/manual/en/ipt/latest/dwca-guide).
 
 ```
 obis-open-data/
@@ -42,8 +42,8 @@ The Parquet schema contains the following top level fields:
 | missing | Recommended fields with missing values. |
 | invalid | Fields with invalid values. |
 | flags | Quality flags. |
-| dropped | Dropped flag. |
-| absence | Absence flag. |
+| dropped | Dropped flag. This indicates records with insufficient quality, for example due to missing coordinates or no match with the World Register of Marine Species (WoRMS). |
+| absence | Absence flag. Note that by default the OBIS webservices do not expose absence records, but they are included in this dataset. |
 | geometry | WKB geometry. |
 
 The `interpreted` field contains the Darwin Core terms as submitted by the data provider, with the exception of the following fields which have been transformed or added by the OBIS quality control pipeline:
@@ -119,9 +119,9 @@ Use the [AWS CLI](https://aws.amazon.com/cli/) to download the dataset locally. 
 aws s3 sync --no-sign-request s3://obis-open-data/occurrence/ ./occurrence/
 ```
 
-### Querying the dataset locally using Python
+### Example: Querying the dataset locally using Python
 
-This is an example query for a single species:
+This is an example [DuckDB](https://duckdb.org/) query for a single species against a local copy of the dataset. Absence records and records of insufficient quality are excluded.
 
 ```python
 import duckdb
@@ -142,7 +142,7 @@ query = """
 df = duckdb.query(query).to_df()
 ```
 
-### Querying the dataset locally using R
+### Example: Querying the dataset locally using R
 
 This is an example of a taxonomic query:
 
