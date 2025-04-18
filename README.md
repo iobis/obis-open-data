@@ -5,6 +5,10 @@ This is the documentation for the Ocean Biodiversity Information System (OBIS) O
 - [Data license and citation](#data-license)
 - [Data organization](#data-organization)
 - [Data access](#data-access)
+  - [Downloading the dataset](#downloading-the-dataset)
+  - [Example: Querying the dataset using Amazon Athena](#example-querying-the-dataset-using-amazon-athena)
+  - [Example: Querying the dataset locally using Python](#example-querying-the-dataset-locally-using-python)
+  - [Example: Querying the dataset locally using R](#example-querying-the-dataset-locally-using-r)
 
 ## Data license and citation
 
@@ -119,7 +123,7 @@ Use the [AWS CLI](https://aws.amazon.com/cli/) to download the dataset locally. 
 aws s3 sync --no-sign-request s3://obis-open-data/occurrence/ ./occurrence/
 ```
 
-### Example: Querying the dataset using Amazon Athena
+### </a>Example: Querying the dataset using Amazon Athena
 
 The Amazon Athena service can be used to query the dataset on S3 using SQL. From the AWWS Console, go to Athena and select `Query your data with Trino SQL`.
 
