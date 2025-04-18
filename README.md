@@ -119,6 +119,93 @@ Use the [AWS CLI](https://aws.amazon.com/cli/) to download the dataset locally. 
 aws s3 sync --no-sign-request s3://obis-open-data/occurrence/ ./occurrence/
 ```
 
+### Example: Querying the dataset using Amazon Athena
+
+The Amazon Athena service can be used to query the dataset on S3 using SQL. From the AWWS Console, go to Athena and select `Query your data with Trino SQL`.
+
+![](images/athena.png)
+
+In the Query editor, go to Settings and enter an S3 location to store results.
+
+![](images/bucket.png)
+
+Then go back to the Query editor and run the following query to create an external table:
+
+```sql
+CREATE EXTERNAL TABLE IF NOT EXISTS occurrence (
+  dataset_id string,
+  interpreted struct<
+    scientificName: string,
+    decimalLatitude: double,
+    decimalLongitude: double,
+    eventDate: string,
+    date_year: int,
+    phylum: string,
+    class: string,
+    order: string,
+    family: string,
+    genus: string,
+    species: string,
+    speciesid: int
+  >,
+  source struct<
+    scientificName: string
+  >,
+  dropped boolean,
+  absence boolean
+)
+STORED AS PARQUET
+LOCATION 's3://obis-open-data/occurrence/';
+```
+
+![](images/create_table.png)
+
+After creating the external table we can query the occurrence dataset like this:
+
+```sql
+SELECT
+    dataset_id,
+    interpreted.scientificName,
+    interpreted.decimalLatitude,
+    interpreted.decimalLongitude,
+    interpreted.eventDate,
+    interpreted.date_year,
+    interpreted.phylum,
+    interpreted.class,
+    interpreted."order",
+    interpreted.family,
+    interpreted.genus,
+    interpreted.species,
+    source.scientificName AS originalScientificName,
+    dropped,
+    absence
+FROM occurrence
+WHERE interpreted.speciesid = 141433
+  AND (dropped IS NULL OR dropped = false)
+  AND (absence IS NULL OR absence = false)
+LIMIT 100;
+```
+
+The resulting records can be downloaded as CSV using the `Download results CSV` button.
+
+![](images/occurrence.png)
+
+Athena also supports spqtial queries. Here's an example of a query to create a species checklist for a polygon of interest:
+
+```sql
+select interpreted.species, count(*)
+from occurrence
+where interpreted.species is not null and
+st_within(
+  st_point(interpreted.decimalLongitude, interpreted.decimalLatitude),
+  st_geometryfromtext('POLYGON ((2.831383 51.212045, 2.896957 51.212045, 2.896957 51.240211, 2.831383 51.240211, 2.831383 51.212045))')
+)
+group by interpreted.species
+order by count(*) desc;
+```
+
+![](images/checklist.png)
+
 ### Example: Querying the dataset locally using Python
 
 This is an example [DuckDB](https://duckdb.org/) query for a single species against a local copy of the dataset. Absence records and records of insufficient quality are excluded.
