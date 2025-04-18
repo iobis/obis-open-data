@@ -125,7 +125,7 @@ aws s3 sync --no-sign-request s3://obis-open-data/occurrence/ ./occurrence/
 
 ### </a>Example: Querying the dataset using Amazon Athena
 
-The Amazon Athena service can be used to query the dataset on S3 using SQL. From the AWWS Console, go to Athena and select `Query your data with Trino SQL`.
+The Amazon Athena service can be used to query the dataset on S3 using SQL. From the AWS Console, go to Athena and select `Query your data with Trino SQL`.
 
 ![](images/athena.png)
 
