@@ -194,7 +194,7 @@ The resulting records can be downloaded as CSV using the `Download results CSV` 
 
 ![](images/occurrence.png)
 
-Athena also supports spqtial queries. Here's an example of a query to create a species checklist for a polygon of interest:
+Athena also supports spatial queries. Here's an example of a query to create a species checklist for a polygon of interest:
 
 ```sql
 select interpreted.species, count(*)
