@@ -15,7 +15,7 @@ This is the documentation for the Ocean Biodiversity Information System (OBIS) O
 The OBIS dataset is built from source datasets that are licensed with CC0, CC BY, or CC BY-NC licenses. License and citation information for every source dataset is available at `s3://obis-open-data/licenses.tsv`. Although most of the underlying data are licensed with open CC0 and CC BY licenses, the full OBIS dataset is licensed under CC BY-NC and can be cited as follows:
 
 ```
-Ocean Biodiversity Information System (OBIS) (25 March 2025) OBIS Occurrence Data https://doi.org/10.25607/obis.occurrence.b89117cd.
+Ocean Biodiversity Information System (OBIS) (25 March 2025) OBIS Occurrence Data. Intergovernmental Oceanographic Commission of UNESCO. https://doi.org/10.25607/obis.occurrence.b89117cd.
 ```
 
 ## Data organization
