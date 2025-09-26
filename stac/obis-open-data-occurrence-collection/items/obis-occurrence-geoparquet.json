@@ -1,0 +1,2642 @@
+{
+  "stac_version": "1.0.0",
+  "type": "Feature",
+  "id": "obis-open-data-occurrence-geoparquet",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180,
+          -90
+        ],
+        [
+          180,
+          -90
+        ],
+        [
+          180,
+          90
+        ],
+        [
+          -180,
+          90
+        ],
+        [
+          -180,
+          -90
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -180,
+    -90,
+    180,
+    90
+  ],
+  "properties": {
+    "datetime": null,
+    "start_datetime": null,
+    "end_datetime": "2025-12-31T23:59:59Z",
+    "title": "OBIS occurrence dataset as GeoParquet",
+    "description": "OBIS occurrence dataset as GeoParquet",
+    "created": "2025-09-26T10:37:46.996174Z",
+    "updated": "2025-09-26T10:37:46.996179Z",
+    "sci:citation": "Ocean Biodiversity Information System (OBIS) (25 March 2025) OBIS Occurrence Data. Intergovernmental Oceanographic Commission of UNESCO. https://doi.org/10.25607/obis.occurrence.b89117cd",
+    "sci:doi": "10.25607/obis.occurrence.b89117cd",
+    "table:columns": [
+      {
+        "name": "_id",
+        "type": "string"
+      },
+      {
+        "name": "_event_id",
+        "type": "string"
+      },
+      {
+        "name": "_occurrence_id",
+        "type": "string"
+      },
+      {
+        "name": "dataset_id",
+        "type": "string"
+      },
+      {
+        "name": "node_ids",
+        "type": "list"
+      },
+      {
+        "name": "node_ids.element",
+        "type": "string"
+      },
+      {
+        "name": "source",
+        "type": "struct"
+      },
+      {
+        "name": "source.acceptedNameUsage",
+        "type": "string"
+      },
+      {
+        "name": "source.acceptedNameUsageID",
+        "type": "string"
+      },
+      {
+        "name": "source.accessRights",
+        "type": "string"
+      },
+      {
+        "name": "source.associatedMedia",
+        "type": "string"
+      },
+      {
+        "name": "source.associatedOccurrences",
+        "type": "string"
+      },
+      {
+        "name": "source.associatedOrganisms",
+        "type": "string"
+      },
+      {
+        "name": "source.associatedReferences",
+        "type": "string"
+      },
+      {
+        "name": "source.associatedSequences",
+        "type": "string"
+      },
+      {
+        "name": "source.associatedTaxa",
+        "type": "string"
+      },
+      {
+        "name": "source.basisOfRecord",
+        "type": "string"
+      },
+      {
+        "name": "source.bed",
+        "type": "string"
+      },
+      {
+        "name": "source.behavior",
+        "type": "string"
+      },
+      {
+        "name": "source.bibliographicCitation",
+        "type": "string"
+      },
+      {
+        "name": "source.caste",
+        "type": "string"
+      },
+      {
+        "name": "source.catalogNumber",
+        "type": "string"
+      },
+      {
+        "name": "source.class",
+        "type": "string"
+      },
+      {
+        "name": "source.collectionCode",
+        "type": "string"
+      },
+      {
+        "name": "source.collectionID",
+        "type": "string"
+      },
+      {
+        "name": "source.continent",
+        "type": "string"
+      },
+      {
+        "name": "source.coordinatePrecision",
+        "type": "string"
+      },
+      {
+        "name": "source.coordinateUncertaintyInMeters",
+        "type": "string"
+      },
+      {
+        "name": "source.country",
+        "type": "string"
+      },
+      {
+        "name": "source.countryCode",
+        "type": "string"
+      },
+      {
+        "name": "source.county",
+        "type": "string"
+      },
+      {
+        "name": "source.cultivarEpithet",
+        "type": "string"
+      },
+      {
+        "name": "source.dataGeneralizations",
+        "type": "string"
+      },
+      {
+        "name": "source.datasetID",
+        "type": "string"
+      },
+      {
+        "name": "source.datasetName",
+        "type": "string"
+      },
+      {
+        "name": "source.dateIdentified",
+        "type": "string"
+      },
+      {
+        "name": "source.day",
+        "type": "string"
+      },
+      {
+        "name": "source.decimalLatitude",
+        "type": "string"
+      },
+      {
+        "name": "source.decimalLongitude",
+        "type": "string"
+      },
+      {
+        "name": "source.degreeOfEstablishment",
+        "type": "string"
+      },
+      {
+        "name": "source.disposition",
+        "type": "string"
+      },
+      {
+        "name": "source.dynamicProperties",
+        "type": "string"
+      },
+      {
+        "name": "source.earliestAgeOrLowestStage",
+        "type": "string"
+      },
+      {
+        "name": "source.earliestEonOrLowestEonothem",
+        "type": "string"
+      },
+      {
+        "name": "source.earliestEpochOrLowestSeries",
+        "type": "string"
+      },
+      {
+        "name": "source.earliestEraOrLowestErathem",
+        "type": "string"
+      },
+      {
+        "name": "source.earliestPeriodOrLowestSystem",
+        "type": "string"
+      },
+      {
+        "name": "source.endDayOfYear",
+        "type": "string"
+      },
+      {
+        "name": "source.establishmentMeans",
+        "type": "string"
+      },
+      {
+        "name": "source.eventDate",
+        "type": "string"
+      },
+      {
+        "name": "source.eventID",
+        "type": "string"
+      },
+      {
+        "name": "source.eventRemarks",
+        "type": "string"
+      },
+      {
+        "name": "source.eventTime",
+        "type": "string"
+      },
+      {
+        "name": "source.eventType",
+        "type": "string"
+      },
+      {
+        "name": "source.family",
+        "type": "string"
+      },
+      {
+        "name": "source.fieldNotes",
+        "type": "string"
+      },
+      {
+        "name": "source.fieldNumber",
+        "type": "string"
+      },
+      {
+        "name": "source.footprintSRS",
+        "type": "string"
+      },
+      {
+        "name": "source.footprintSpatialFit",
+        "type": "string"
+      },
+      {
+        "name": "source.footprintWKT",
+        "type": "string"
+      },
+      {
+        "name": "source.formation",
+        "type": "string"
+      },
+      {
+        "name": "source.genericName",
+        "type": "string"
+      },
+      {
+        "name": "source.genus",
+        "type": "string"
+      },
+      {
+        "name": "source.geodeticDatum",
+        "type": "string"
+      },
+      {
+        "name": "source.geologicalContextID",
+        "type": "string"
+      },
+      {
+        "name": "source.georeferenceProtocol",
+        "type": "string"
+      },
+      {
+        "name": "source.georeferenceRemarks",
+        "type": "string"
+      },
+      {
+        "name": "source.georeferenceSources",
+        "type": "string"
+      },
+      {
+        "name": "source.georeferenceVerificationStatus",
+        "type": "string"
+      },
+      {
+        "name": "source.georeferencedBy",
+        "type": "string"
+      },
+      {
+        "name": "source.georeferencedDate",
+        "type": "string"
+      },
+      {
+        "name": "source.group",
+        "type": "string"
+      },
+      {
+        "name": "source.habitat",
+        "type": "string"
+      },
+      {
+        "name": "source.higherClassification",
+        "type": "string"
+      },
+      {
+        "name": "source.higherGeography",
+        "type": "string"
+      },
+      {
+        "name": "source.higherGeographyID",
+        "type": "string"
+      },
+      {
+        "name": "source.highestBiostratigraphicZone",
+        "type": "string"
+      },
+      {
+        "name": "source.identificationID",
+        "type": "string"
+      },
+      {
+        "name": "source.identificationQualifier",
+        "type": "string"
+      },
+      {
+        "name": "source.identificationReferences",
+        "type": "string"
+      },
+      {
+        "name": "source.identificationRemarks",
+        "type": "string"
+      },
+      {
+        "name": "source.identificationVerificationStatus",
+        "type": "string"
+      },
+      {
+        "name": "source.identifiedBy",
+        "type": "string"
+      },
+      {
+        "name": "source.identifiedByID",
+        "type": "string"
+      },
+      {
+        "name": "source.individualCount",
+        "type": "string"
+      },
+      {
+        "name": "source.informationWithheld",
+        "type": "string"
+      },
+      {
+        "name": "source.infragenericEpithet",
+        "type": "string"
+      },
+      {
+        "name": "source.infraspecificEpithet",
+        "type": "string"
+      },
+      {
+        "name": "source.institutionCode",
+        "type": "string"
+      },
+      {
+        "name": "source.institutionID",
+        "type": "string"
+      },
+      {
+        "name": "source.island",
+        "type": "string"
+      },
+      {
+        "name": "source.islandGroup",
+        "type": "string"
+      },
+      {
+        "name": "source.kingdom",
+        "type": "string"
+      },
+      {
+        "name": "source.language",
+        "type": "string"
+      },
+      {
+        "name": "source.latestAgeOrHighestStage",
+        "type": "string"
+      },
+      {
+        "name": "source.latestEonOrHighestEonothem",
+        "type": "string"
+      },
+      {
+        "name": "source.latestEpochOrHighestSeries",
+        "type": "string"
+      },
+      {
+        "name": "source.latestEraOrHighestErathem",
+        "type": "string"
+      },
+      {
+        "name": "source.latestPeriodOrHighestSystem",
+        "type": "string"
+      },
+      {
+        "name": "source.license",
+        "type": "string"
+      },
+      {
+        "name": "source.lifeStage",
+        "type": "string"
+      },
+      {
+        "name": "source.lithostratigraphicTerms",
+        "type": "string"
+      },
+      {
+        "name": "source.locality",
+        "type": "string"
+      },
+      {
+        "name": "source.locationAccordingTo",
+        "type": "string"
+      },
+      {
+        "name": "source.locationID",
+        "type": "string"
+      },
+      {
+        "name": "source.locationRemarks",
+        "type": "string"
+      },
+      {
+        "name": "source.lowestBiostratigraphicZone",
+        "type": "string"
+      },
+      {
+        "name": "source.materialEntityID",
+        "type": "string"
+      },
+      {
+        "name": "source.materialEntityRemarks",
+        "type": "string"
+      },
+      {
+        "name": "source.materialSampleID",
+        "type": "string"
+      },
+      {
+        "name": "source.maximumDepthInMeters",
+        "type": "string"
+      },
+      {
+        "name": "source.maximumDistanceAboveSurfaceInMeters",
+        "type": "string"
+      },
+      {
+        "name": "source.maximumElevationInMeters",
+        "type": "string"
+      },
+      {
+        "name": "source.member",
+        "type": "string"
+      },
+      {
+        "name": "source.minimumDepthInMeters",
+        "type": "string"
+      },
+      {
+        "name": "source.minimumDistanceAboveSurfaceInMeters",
+        "type": "string"
+      },
+      {
+        "name": "source.minimumElevationInMeters",
+        "type": "string"
+      },
+      {
+        "name": "source.modified",
+        "type": "string"
+      },
+      {
+        "name": "source.month",
+        "type": "string"
+      },
+      {
+        "name": "source.municipality",
+        "type": "string"
+      },
+      {
+        "name": "source.nameAccordingTo",
+        "type": "string"
+      },
+      {
+        "name": "source.nameAccordingToID",
+        "type": "string"
+      },
+      {
+        "name": "source.namePublishedIn",
+        "type": "string"
+      },
+      {
+        "name": "source.namePublishedInID",
+        "type": "string"
+      },
+      {
+        "name": "source.namePublishedInYear",
+        "type": "string"
+      },
+      {
+        "name": "source.nomenclaturalCode",
+        "type": "string"
+      },
+      {
+        "name": "source.nomenclaturalStatus",
+        "type": "string"
+      },
+      {
+        "name": "source.occurrenceID",
+        "type": "string"
+      },
+      {
+        "name": "source.occurrenceRemarks",
+        "type": "string"
+      },
+      {
+        "name": "source.occurrenceStatus",
+        "type": "string"
+      },
+      {
+        "name": "source.order",
+        "type": "string"
+      },
+      {
+        "name": "source.organismID",
+        "type": "string"
+      },
+      {
+        "name": "source.organismName",
+        "type": "string"
+      },
+      {
+        "name": "source.organismQuantity",
+        "type": "string"
+      },
+      {
+        "name": "source.organismQuantityType",
+        "type": "string"
+      },
+      {
+        "name": "source.organismRemarks",
+        "type": "string"
+      },
+      {
+        "name": "source.organismScope",
+        "type": "string"
+      },
+      {
+        "name": "source.originalNameUsage",
+        "type": "string"
+      },
+      {
+        "name": "source.originalNameUsageID",
+        "type": "string"
+      },
+      {
+        "name": "source.otherCatalogNumbers",
+        "type": "string"
+      },
+      {
+        "name": "source.ownerInstitutionCode",
+        "type": "string"
+      },
+      {
+        "name": "source.parentEventID",
+        "type": "string"
+      },
+      {
+        "name": "source.parentNameUsage",
+        "type": "string"
+      },
+      {
+        "name": "source.parentNameUsageID",
+        "type": "string"
+      },
+      {
+        "name": "source.pathway",
+        "type": "string"
+      },
+      {
+        "name": "source.phylum",
+        "type": "string"
+      },
+      {
+        "name": "source.pointRadiusSpatialFit",
+        "type": "string"
+      },
+      {
+        "name": "source.preparations",
+        "type": "string"
+      },
+      {
+        "name": "source.previousIdentifications",
+        "type": "string"
+      },
+      {
+        "name": "source.recordNumber",
+        "type": "string"
+      },
+      {
+        "name": "source.recordedBy",
+        "type": "string"
+      },
+      {
+        "name": "source.recordedByID",
+        "type": "string"
+      },
+      {
+        "name": "source.references",
+        "type": "string"
+      },
+      {
+        "name": "source.reproductiveCondition",
+        "type": "string"
+      },
+      {
+        "name": "source.rightsHolder",
+        "type": "string"
+      },
+      {
+        "name": "source.sampleSizeUnit",
+        "type": "string"
+      },
+      {
+        "name": "source.sampleSizeValue",
+        "type": "string"
+      },
+      {
+        "name": "source.samplingEffort",
+        "type": "string"
+      },
+      {
+        "name": "source.samplingProtocol",
+        "type": "string"
+      },
+      {
+        "name": "source.scientificName",
+        "type": "string"
+      },
+      {
+        "name": "source.scientificNameAuthorship",
+        "type": "string"
+      },
+      {
+        "name": "source.scientificNameID",
+        "type": "string"
+      },
+      {
+        "name": "source.sex",
+        "type": "string"
+      },
+      {
+        "name": "source.specificEpithet",
+        "type": "string"
+      },
+      {
+        "name": "source.startDayOfYear",
+        "type": "string"
+      },
+      {
+        "name": "source.stateProvince",
+        "type": "string"
+      },
+      {
+        "name": "source.subfamily",
+        "type": "string"
+      },
+      {
+        "name": "source.subgenus",
+        "type": "string"
+      },
+      {
+        "name": "source.subtribe",
+        "type": "string"
+      },
+      {
+        "name": "source.superfamily",
+        "type": "string"
+      },
+      {
+        "name": "source.taxonConceptID",
+        "type": "string"
+      },
+      {
+        "name": "source.taxonID",
+        "type": "string"
+      },
+      {
+        "name": "source.taxonRank",
+        "type": "string"
+      },
+      {
+        "name": "source.taxonRemarks",
+        "type": "string"
+      },
+      {
+        "name": "source.taxonomicStatus",
+        "type": "string"
+      },
+      {
+        "name": "source.tribe",
+        "type": "string"
+      },
+      {
+        "name": "source.type",
+        "type": "string"
+      },
+      {
+        "name": "source.typeStatus",
+        "type": "string"
+      },
+      {
+        "name": "source.verbatimCoordinateSystem",
+        "type": "string"
+      },
+      {
+        "name": "source.verbatimCoordinates",
+        "type": "string"
+      },
+      {
+        "name": "source.verbatimDepth",
+        "type": "string"
+      },
+      {
+        "name": "source.verbatimElevation",
+        "type": "string"
+      },
+      {
+        "name": "source.verbatimEventDate",
+        "type": "string"
+      },
+      {
+        "name": "source.verbatimIdentification",
+        "type": "string"
+      },
+      {
+        "name": "source.verbatimLabel",
+        "type": "string"
+      },
+      {
+        "name": "source.verbatimLatitude",
+        "type": "string"
+      },
+      {
+        "name": "source.verbatimLocality",
+        "type": "string"
+      },
+      {
+        "name": "source.verbatimLongitude",
+        "type": "string"
+      },
+      {
+        "name": "source.verbatimSRS",
+        "type": "string"
+      },
+      {
+        "name": "source.verbatimTaxonRank",
+        "type": "string"
+      },
+      {
+        "name": "source.vernacularName",
+        "type": "string"
+      },
+      {
+        "name": "source.verticalDatum",
+        "type": "string"
+      },
+      {
+        "name": "source.vitality",
+        "type": "string"
+      },
+      {
+        "name": "source.waterBody",
+        "type": "string"
+      },
+      {
+        "name": "source.year",
+        "type": "string"
+      },
+      {
+        "name": "interpreted",
+        "type": "struct"
+      },
+      {
+        "name": "interpreted.acceptedNameUsage",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.acceptedNameUsageID",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.accessRights",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.aphiaid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.areas",
+        "type": "list"
+      },
+      {
+        "name": "interpreted.areas.element",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.associatedMedia",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.associatedOccurrences",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.associatedOrganisms",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.associatedReferences",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.associatedSequences",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.associatedTaxa",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.basisOfRecord",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.bathymetry",
+        "type": "number"
+      },
+      {
+        "name": "interpreted.bed",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.behavior",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.bibliographicCitation",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.brackish",
+        "type": "boolean"
+      },
+      {
+        "name": "interpreted.caste",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.catalogNumber",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.class",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.classid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.collectionCode",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.collectionID",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.continent",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.coordinatePrecision",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.coordinateUncertaintyInMeters",
+        "type": "number"
+      },
+      {
+        "name": "interpreted.country",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.countryCode",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.county",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.cultivarEpithet",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.dataGeneralizations",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.datasetID",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.datasetName",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.dateIdentified",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.date_end",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.date_mid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.date_start",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.date_year",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.day",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.decimalLatitude",
+        "type": "number"
+      },
+      {
+        "name": "interpreted.decimalLongitude",
+        "type": "number"
+      },
+      {
+        "name": "interpreted.degreeOfEstablishment",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.depth",
+        "type": "number"
+      },
+      {
+        "name": "interpreted.disposition",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.division",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.divisionid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.domain",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.domainid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.dynamicProperties",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.earliestAgeOrLowestStage",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.earliestEonOrLowestEonothem",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.earliestEpochOrLowestSeries",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.earliestEraOrLowestErathem",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.earliestPeriodOrLowestSystem",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.endDayOfYear",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.establishmentMeans",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.eventDate",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.eventID",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.eventRemarks",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.eventTime",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.eventType",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.family",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.familyid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.fieldNotes",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.fieldNumber",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.footprintSRS",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.footprintSpatialFit",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.footprintWKT",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.forma",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.formaid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.formation",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.genericName",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.genus",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.genusid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.geodeticDatum",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.geologicalContextID",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.georeferenceProtocol",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.georeferenceRemarks",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.georeferenceSources",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.georeferenceVerificationStatus",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.georeferencedBy",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.georeferencedDate",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.gigaclass",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.gigaclassid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.group",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.hab",
+        "type": "boolean"
+      },
+      {
+        "name": "interpreted.habitat",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.higherClassification",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.higherGeography",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.higherGeographyID",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.highestBiostratigraphicZone",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.identificationID",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.identificationQualifier",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.identificationReferences",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.identificationRemarks",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.identificationVerificationStatus",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.identifiedBy",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.identifiedByID",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.individualCount",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.informationWithheld",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.infraclass",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.infraclassid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.infragenericEpithet",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.infrakingdom",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.infrakingdomid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.infraorder",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.infraorderid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.infraphylum",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.infraphylumid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.infraspecificEpithet",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.institutionCode",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.institutionID",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.island",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.islandGroup",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.kingdom",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.kingdomid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.language",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.latestAgeOrHighestStage",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.latestEonOrHighestEonothem",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.latestEpochOrHighestSeries",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.latestEraOrHighestErathem",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.latestPeriodOrHighestSystem",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.license",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.lifeStage",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.lithostratigraphicTerms",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.locality",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.locationAccordingTo",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.locationID",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.locationRemarks",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.lowestBiostratigraphicZone",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.marine",
+        "type": "boolean"
+      },
+      {
+        "name": "interpreted.materialEntityID",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.materialEntityRemarks",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.materialSampleID",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.maximumDepthInMeters",
+        "type": "number"
+      },
+      {
+        "name": "interpreted.maximumDistanceAboveSurfaceInMeters",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.maximumElevationInMeters",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.megaclass",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.megaclassid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.member",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.minimumDepthInMeters",
+        "type": "number"
+      },
+      {
+        "name": "interpreted.minimumDistanceAboveSurfaceInMeters",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.minimumElevationInMeters",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.modified",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.month",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.municipality",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.nameAccordingTo",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.nameAccordingToID",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.namePublishedIn",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.namePublishedInID",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.namePublishedInYear",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.nomenclaturalCode",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.nomenclaturalStatus",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.occurrenceID",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.occurrenceRemarks",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.occurrenceStatus",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.order",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.orderid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.organismID",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.organismName",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.organismQuantity",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.organismQuantityType",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.organismRemarks",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.organismScope",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.originalNameUsage",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.originalNameUsageID",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.otherCatalogNumbers",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.ownerInstitutionCode",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.parentEventID",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.parentNameUsage",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.parentNameUsageID",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.parvorder",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.parvorderid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.parvphylum",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.parvphylumid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.pathway",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.phylum",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.phylum (division)",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.phylum (division)id",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.phylumid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.pointRadiusSpatialFit",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.preparations",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.previousIdentifications",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.recordNumber",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.recordedBy",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.recordedByID",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.redlist_category",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.references",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.reproductiveCondition",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.rightsHolder",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.sampleSizeUnit",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.sampleSizeValue",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.samplingEffort",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.samplingProtocol",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.scientificName",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.scientificNameAuthorship",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.scientificNameID",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.section",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.sectionid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.sex",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.shoredistance",
+        "type": "number"
+      },
+      {
+        "name": "interpreted.species",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.speciesid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.specificEpithet",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.sss",
+        "type": "number"
+      },
+      {
+        "name": "interpreted.sst",
+        "type": "number"
+      },
+      {
+        "name": "interpreted.startDayOfYear",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.stateProvince",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.subclass",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.subclassid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.subdivision",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.subdivisionid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.subfamily",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.subfamilyid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.subforma",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.subformaid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.subgenus",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.subgenusid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.subkingdom",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.subkingdomid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.suborder",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.suborderid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.subphylum",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.subphylum (subdivision)",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.subphylum (subdivision)id",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.subphylumid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.subsection",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.subsectionid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.subspecies",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.subspeciesid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.subterclass",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.subterclassid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.subtribe",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.subtribeid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.subvariety",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.subvarietyid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.superclass",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.superclassid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.superdomain",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.superdomainid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.superfamily",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.superfamilyid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.superorder",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.superorderid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.supertribe",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.supertribeid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.taxonConceptID",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.taxonID",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.taxonRank",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.taxonRemarks",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.taxonomicStatus",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.tribe",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.tribeid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.type",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.typeStatus",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.unaccepted",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.variety",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.varietyid",
+        "type": "integer"
+      },
+      {
+        "name": "interpreted.verbatimCoordinateSystem",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.verbatimCoordinates",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.verbatimDepth",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.verbatimElevation",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.verbatimEventDate",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.verbatimIdentification",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.verbatimLabel",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.verbatimLatitude",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.verbatimLocality",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.verbatimLongitude",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.verbatimSRS",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.verbatimTaxonRank",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.vernacularName",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.verticalDatum",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.vitality",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.waterBody",
+        "type": "string"
+      },
+      {
+        "name": "interpreted.wrims",
+        "type": "boolean"
+      },
+      {
+        "name": "interpreted.year",
+        "type": "string"
+      },
+      {
+        "name": "extensions",
+        "type": "struct"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData",
+        "type": "list"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element",
+        "type": "struct"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element._event_id",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element._id",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element._occurrence_id",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.id",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.level",
+        "type": "integer"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source",
+        "type": "struct"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.DNA_sequence",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source._16s_recover",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source._16s_recover_software",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.adapters",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.ampliconSize",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.amplificationReactionVolume",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.amplificationReactionVolumeUnit",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.annealingTemp",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.annealingTempUnit",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.annot",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.assembly_name",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.assembly_qual",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.assembly_software",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.automaticBaselineValue",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.automaticThresholdQuantificationCycle",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.baselineValue",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.bin_param",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.bin_software",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.biotic_relationship",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.chimera_check",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.compl_appr",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.compl_score",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.compl_software",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.concentration",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.concentrationUnit",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.contam_score",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.contam_screen_input",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.contam_screen_param",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.contaminationAssessment",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.decontam_software",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.detec_type",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.encoded_traits",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.env_broad_scale",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.env_local_scale",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.env_medium",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.estimatedNumberOfCopies",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.estimated_size",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.experimentalVariance",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.experimental_factor",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.extrachrom_elements",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.feat_pred",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.host_disease_stat",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.host_pred_appr",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.host_pred_est_acc",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.host_spec_range",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.isol_growth_condt",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.lib_layout",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.lib_reads_seqd",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.lib_screen",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.lib_size",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.lib_vector",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.mag_cov_software",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.methodDeterminationConcentrationAndRatios",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.mid",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.neg_cont_type",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.nucl_acid_amp",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.nucl_acid_ext",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.num_replicons",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.number_contig",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.occurrenceID",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.otu_class_appr",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.otu_db",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.otu_seq_comp_appr",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.partitionVolume",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.partitionVolumeUnit",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.pathogenicity",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.pcr_analysis_software",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.pcr_cond",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.pcr_primer_forward",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.pcr_primer_lod",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.pcr_primer_loq",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.pcr_primer_name_forward",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.pcr_primer_name_reverse",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.pcr_primer_reference",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.pcr_primer_reverse",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.pcr_primers",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.ploidy",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.pos_cont_type",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.pred_genome_struc",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.pred_genome_type",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.probeQuencher",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.probeReporter",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.project_name",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.propagation",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.quantificationCycle",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.ratioOfAbsorbance260_230",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.ratioOfAbsorbance260_280",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.reassembly_bin",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.ref_biomaterial",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.ref_db",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.rel_to_oxygen",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.samp_collec_device",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.samp_collec_method",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.samp_mat_process",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.samp_name",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.samp_size",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.samp_taxon_id",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.samp_vol_we_dna_ext",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.seq_meth",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.seq_quality_check",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.sim_search_meth",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.single_cell_lysis_appr",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.single_cell_lysis_prot",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.size_frac",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.sop",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.sort_tech",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.source_mat_id",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.source_uvig",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.specific_host",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.subspecf_gen_lin",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.target_gene",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.target_subfragment",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.tax_class",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.tax_ident",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.thresholdQuantificationCycle",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.trna_ext_software",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.trnas",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.trophic_level",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.url",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.vir_ident_software",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.virus_enrich_appr",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.wga_amp_appr",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.gbif.org/terms/1.0/DNADerivedData.element.source.wga_amp_kit",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.iobis.org/obis/terms/ExtendedMeasurementOrFact",
+        "type": "list"
+      },
+      {
+        "name": "extensions.http://rs.iobis.org/obis/terms/ExtendedMeasurementOrFact.element",
+        "type": "struct"
+      },
+      {
+        "name": "extensions.http://rs.iobis.org/obis/terms/ExtendedMeasurementOrFact.element._event_id",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.iobis.org/obis/terms/ExtendedMeasurementOrFact.element._id",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.iobis.org/obis/terms/ExtendedMeasurementOrFact.element._occurrence_id",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.iobis.org/obis/terms/ExtendedMeasurementOrFact.element.id",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.iobis.org/obis/terms/ExtendedMeasurementOrFact.element.level",
+        "type": "integer"
+      },
+      {
+        "name": "extensions.http://rs.iobis.org/obis/terms/ExtendedMeasurementOrFact.element.source",
+        "type": "struct"
+      },
+      {
+        "name": "extensions.http://rs.iobis.org/obis/terms/ExtendedMeasurementOrFact.element.source.measurementAccuracy",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.iobis.org/obis/terms/ExtendedMeasurementOrFact.element.source.measurementDeterminedBy",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.iobis.org/obis/terms/ExtendedMeasurementOrFact.element.source.measurementDeterminedDate",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.iobis.org/obis/terms/ExtendedMeasurementOrFact.element.source.measurementID",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.iobis.org/obis/terms/ExtendedMeasurementOrFact.element.source.measurementMethod",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.iobis.org/obis/terms/ExtendedMeasurementOrFact.element.source.measurementRemarks",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.iobis.org/obis/terms/ExtendedMeasurementOrFact.element.source.measurementType",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.iobis.org/obis/terms/ExtendedMeasurementOrFact.element.source.measurementTypeID",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.iobis.org/obis/terms/ExtendedMeasurementOrFact.element.source.measurementUnit",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.iobis.org/obis/terms/ExtendedMeasurementOrFact.element.source.measurementUnitID",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.iobis.org/obis/terms/ExtendedMeasurementOrFact.element.source.measurementValue",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.iobis.org/obis/terms/ExtendedMeasurementOrFact.element.source.measurementValueID",
+        "type": "string"
+      },
+      {
+        "name": "extensions.http://rs.iobis.org/obis/terms/ExtendedMeasurementOrFact.element.source.occurrenceID",
+        "type": "string"
+      },
+      {
+        "name": "missing",
+        "type": "list"
+      },
+      {
+        "name": "missing.element",
+        "type": "string"
+      },
+      {
+        "name": "invalid",
+        "type": "list"
+      },
+      {
+        "name": "invalid.element",
+        "type": "string"
+      },
+      {
+        "name": "flags",
+        "type": "list"
+      },
+      {
+        "name": "flags.element",
+        "type": "string"
+      },
+      {
+        "name": "dropped",
+        "type": "boolean"
+      },
+      {
+        "name": "absence",
+        "type": "boolean"
+      },
+      {
+        "name": "tags",
+        "type": "list"
+      },
+      {
+        "name": "tags.element",
+        "type": "string"
+      },
+      {
+        "name": "geometry",
+        "type": "binary"
+      }
+    ]
+  },
+  "assets": {
+    "data": {
+      "href": "s3://obis-open-data/occurrence/*",
+      "type": "application/x-parquet",
+      "roles": [
+        "data"
+      ],
+      "title": "GeoParquet file",
+      "description": "Geoparquet file",
+      "sample": "s3://obis-open-data/occurrence/00017595-e015-4ec6-bf8a-b013e0dca521.parquet"
+    }
+  },
+  "collection": "obis-open-data-occurrence-collection",
+  "links": [
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Parent collection"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "Parent collection"
+    },
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Root catalog"
+    },
+    {
+      "rel": "self",
+      "href": "./obis-occurrence-geoparquet.json",
+      "type": "application/json"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.0.0/schema.json"
+  ]
+}
