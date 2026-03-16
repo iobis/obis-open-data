@@ -136,9 +136,6 @@ class STACCreator:
                     "href": "./catalog.json",
                     "type": "application/json"
                 }
-            ],
-            "stac_extensions": [
-                "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
             ]
         }
     
@@ -153,6 +150,8 @@ class STACCreator:
             "license": self.license,
             "providers": self.providers,
             "extent": self.extent,
+            "sci:citation": "Ocean Biodiversity Information System (OBIS) (25 March 2025) OBIS Occurrence Data. Intergovernmental Oceanographic Commission of UNESCO. https://doi.org/10.25607/obis.occurrence.b89117cd",
+            "sci:doi": "10.25607/obis.occurrence.b89117cd",
             "item_assets": {
                 "data": {
                     "type": "application/x-parquet",
