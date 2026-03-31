@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: If you use this work, please cite it as below.
+title: OBIS open data
+type: dataset
+url: https://github.com/iobis/obis-open-data
+license: CC-BY-IGO-4.0
+authors:
+  - given-names: Pieter
+    family-names: Provoost
+    orcid: "https://orcid.org/0000-0002-4236-0384"
+  - name: Intergovernmental Oceanographic Commission of UNESCO
+    alias: IOC-UNESCO
+    website: "https://obis.org"
+date-released: 2025-09-26
